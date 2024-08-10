@@ -1,0 +1,16 @@
+{
+  "item.nachito.ancient_handle": "Ancient Handle",
+  "item.nachito.efficient_handle": "Swift Handle",
+  "item.nachito.fast_mace": "Swift Mace",
+  "item.nachito.sharp_mace": "Sharp Mace",
+  "item.nachito.sharp_sword": "Sharp Sword",
+  "item.nachito.fast_sword": "Swift Sword",
+  "item.nachito.sharp_axe": "Sharp Axe",
+  "item.nachito.fast_axe": "Swift Axe",
+  "item.nachito.fast_pick": "Swift Pickaxe",
+  "item.nachito.nacho_chestplate": "Resistant Netherite Chestplate",
+  "item.nachito.nacho_leggings": "Resistant Netherite Leggings",
+  "item.nachito.nacho_boots": "Resistant Netherite Boots",
+  "item.nachito.nacho_helmet": "Resistant Netherite Helmet",
+  "death.attack.nachito_damage": "%1$s was killed by Voideath"
+}

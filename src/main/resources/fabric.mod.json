@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ancienthandle",
+	"version": "${version}",
+	"name": "Handles!",
+	"description": "Adds 2 handles which allow for weapon upgrades and a new boss.",
+	"authors": [
+		"NachitoSMO"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nachito/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nachito.ancienthandle.AncientHandleInit"
+		],
+		"client": [
+			"nachito.ancienthandle.AncientHandleClient"
+		]
+	},
+	"mixins": [
+		"ancienthandle.mixins.json",
+		{
+			"config": "ancienthandle.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

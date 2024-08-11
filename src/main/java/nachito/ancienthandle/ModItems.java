@@ -1,5 +1,7 @@
 package nachito.ancienthandle;
 
+import nachito.ancienthandle.blocks.DeathBeaconEntity;
+import nachito.ancienthandle.items.*;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.*;

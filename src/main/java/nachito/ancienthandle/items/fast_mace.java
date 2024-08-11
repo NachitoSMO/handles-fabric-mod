@@ -1,5 +1,6 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.items;
 
+import nachito.ancienthandle.ModItems;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.entity.attribute.EntityAttributeModifier;

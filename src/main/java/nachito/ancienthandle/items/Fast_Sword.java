@@ -1,5 +1,6 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.items;
 
+import nachito.ancienthandle.ModItems;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,21 +16,20 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class Sharp_Sword extends SwordItem {
-
-    public Sharp_Sword(ToolMaterial toolMaterial, Settings settings) {
+public class Fast_Sword extends SwordItem {
+    public Fast_Sword(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
 
     @Override
     public void appendTooltip(ItemStack itemStack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.of("Right Click to gain Strength II for 15s."));
+        tooltip.add(Text.of("Right Click to gain Speed III for 15s."));
     }
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
 
-        Item item = ModItems.SHARP_SWORD;
+        Item item = ModItems.FAST_SWORD;
         ItemStack itemStack = user.getStackInHand(hand);
 
         boolean hasHelmet = false;
@@ -56,12 +56,12 @@ public class Sharp_Sword extends SwordItem {
             return TypedActionResult.pass(itemStack);
         }
 
-        if (hasHelmet && hasLeggings && hasBoots && hasChestplate) {
-            user.getItemCooldownManager().set(item, 150);
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 400, 2));
+        if (hasBoots && hasChestplate && hasHelmet && hasLeggings) {
+            user.getItemCooldownManager().set(item, 75);
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 600, 3));
         } else {
-            user.getItemCooldownManager().set(item, 300);
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 300, 1));
+            user.getItemCooldownManager().set(item, 150);
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 300, 2));
         }
         return TypedActionResult.pass(itemStack);
 

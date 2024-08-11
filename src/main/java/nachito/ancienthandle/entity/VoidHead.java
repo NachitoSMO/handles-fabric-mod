@@ -1,5 +1,6 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.entity;
 
+import nachito.ancienthandle.AncientHandleInit;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
@@ -35,7 +36,7 @@ public class VoidHead extends FlyingEntity implements Monster {
     private int ticksChange = 0;
     private int ticksSet = random.nextBetween(10, 20);
 
-    protected VoidHead(EntityType<? extends FlyingEntity> entityType, World world) {
+    public VoidHead(EntityType<? extends FlyingEntity> entityType, World world) {
         super(entityType, world);
     }
 

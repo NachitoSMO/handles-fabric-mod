@@ -1,5 +1,6 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.blocks;
 
+import nachito.ancienthandle.ModItems;
 import net.minecraft.block.BeaconBlock;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;

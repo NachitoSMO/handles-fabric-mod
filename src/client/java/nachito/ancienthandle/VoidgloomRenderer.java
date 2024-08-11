@@ -1,13 +1,12 @@
 package nachito.ancienthandle;
 
+import nachito.ancienthandle.entity.Voidgloom;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 
 public class VoidgloomRenderer extends MobEntityRenderer<Voidgloom, VoidgloomEntityModel<Voidgloom>> {

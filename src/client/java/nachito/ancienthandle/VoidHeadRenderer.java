@@ -1,5 +1,6 @@
 package nachito.ancienthandle;
 
+import nachito.ancienthandle.entity.VoidHead;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.util.Identifier;

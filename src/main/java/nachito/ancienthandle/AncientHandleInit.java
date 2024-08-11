@@ -1,5 +1,9 @@
 package nachito.ancienthandle;
 
+import nachito.ancienthandle.blocks.DeathBeacon;
+import nachito.ancienthandle.entity.VoidHead;
+import nachito.ancienthandle.entity.Voidgloom;
+import nachito.ancienthandle.items.NachoMaterial;
 import nachito.ancienthandle.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

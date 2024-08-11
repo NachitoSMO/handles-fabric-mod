@@ -1,4 +1,4 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.items;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

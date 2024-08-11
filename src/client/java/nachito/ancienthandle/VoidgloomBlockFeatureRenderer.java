@@ -1,5 +1,6 @@
 package nachito.ancienthandle;
 
+import nachito.ancienthandle.entity.Voidgloom;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.BlockState;

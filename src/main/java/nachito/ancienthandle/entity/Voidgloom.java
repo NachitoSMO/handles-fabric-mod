@@ -1,5 +1,7 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.entity;
 
+import nachito.ancienthandle.AncientHandleInit;
+import nachito.ancienthandle.ModItems;
 import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -60,7 +62,7 @@ public class Voidgloom extends PathAwareEntity {
     private int tpCd = 0;
     private boolean rng = random.nextBoolean();
 
-    protected Voidgloom(EntityType<? extends PathAwareEntity> entityType, World world) {
+    public Voidgloom(EntityType<? extends PathAwareEntity> entityType, World world) {
         super(entityType, world);
 
         phaseHits = 100;

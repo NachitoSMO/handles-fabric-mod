@@ -1,5 +1,6 @@
-package nachito.ancienthandle;
+package nachito.ancienthandle.blocks;
 
+import nachito.ancienthandle.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;

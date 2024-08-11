@@ -1,5 +1,6 @@
 package nachito.ancienthandle;
 
+import nachito.ancienthandle.entity.VoidHead;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;

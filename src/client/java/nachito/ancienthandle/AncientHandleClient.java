@@ -12,6 +12,7 @@ public class AncientHandleClient implements ClientModInitializer {
 		EntityRendererRegistry.register(AncientHandleInit.VOIDGLOOM, VoidgloomRenderer::new);
 		EntityRendererRegistry.register(AncientHandleInit.VOIDHEAD, VoidHeadRenderer::new);
 		EntityModelLayerRegistry.registerModelLayer(NachitoModelLayers.VOIDHEAD_LAYER, VoidHeadEntityModel::getTexturedModelData);
+		EntityRendererRegistry.register(AncientHandleInit.IGNATIUS, IgnatiusRenderer::new);
 		BlockRenderLayerMap.INSTANCE.putBlock(AncientHandleInit.DEATH_BEACON, RenderLayer.getCutout());
 	}
 }

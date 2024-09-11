@@ -30,7 +30,7 @@ public class ModLootTableModifiers {
             Identifier id = key.getValue();
             if (ANCIENT_CITY_ID.equals(id)) {
                 addToLootTable(tableBuilder, ModItems.ANCIENT_HANDLE, 0.02f);
-                addToLootTable(tableBuilder, ModItems.EFFICIENT_HANDLE, 0.025f);
+                addToLootTable(tableBuilder, ModItems.EFFICIENT_HANDLE, 0.06f);
             }
         });
     }

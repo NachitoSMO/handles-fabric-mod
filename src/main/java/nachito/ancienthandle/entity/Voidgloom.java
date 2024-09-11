@@ -70,7 +70,7 @@ public class Voidgloom extends PathAwareEntity {
         this.setCustomNameVisible(true);
 
         if (world instanceof ServerWorld) {
-            this.bossBar = new ServerBossBar(Text.of("§lVOIDEATH"), BossBar.Color.RED, BossBar.Style.PROGRESS);
+            this.bossBar = new ServerBossBar(Text.of("§lVOIDEATH"), BossBar.Color.BLUE, BossBar.Style.PROGRESS);
         }
     }
 
@@ -242,6 +242,7 @@ public class Voidgloom extends PathAwareEntity {
             if (!world.isClient && closestPlayer != null && !this.isDead()) {
 
                 updateName();
+
                 this.moveControl.moveTo(closestPlayer.getX(), closestPlayer.getY(), closestPlayer.getZ(), 0.5);
 
                 if (atkCooldown > 20) {

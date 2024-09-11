@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nachito:nachito_damage"
+    "nachito:nachito_damage",
+    "nachito:nachito_blaze_damage"
   ]
 }

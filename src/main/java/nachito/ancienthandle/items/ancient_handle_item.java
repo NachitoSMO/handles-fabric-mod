@@ -2,6 +2,7 @@ package nachito.ancienthandle.items;
 
 import nachito.ancienthandle.AncientHandleInit;
 import nachito.ancienthandle.ModItems;
+import nachito.ancienthandle.entity.Ignatius;
 import nachito.ancienthandle.entity.Voidgloom;
 import nachito.ancienthandle.util.EnchantmentUtils;
 import net.minecraft.enchantment.Enchantment;

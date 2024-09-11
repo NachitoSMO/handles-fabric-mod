@@ -2,6 +2,7 @@ package nachito.ancienthandle.items;
 
 import nachito.ancienthandle.AncientHandleInit;
 import nachito.ancienthandle.ModItems;
+import nachito.ancienthandle.entity.Ignatius;
 import nachito.ancienthandle.entity.Voidgloom;
 import nachito.ancienthandle.util.EnchantmentUtils;
 import net.minecraft.enchantment.Enchantment;
@@ -48,6 +49,7 @@ public class efficient_handle_item extends Item {
         ItemStack pickStack = new ItemStack(ModItems.FAST_PICK);
 
         Voidgloom voidgloom = new Voidgloom(AncientHandleInit.VOIDGLOOM, world);
+        Ignatius ignatius = new Ignatius(AncientHandleInit.IGNATIUS, world);
 
         DynamicRegistryManager drm = world.getRegistryManager();
         Registry<Enchantment> reg = drm.get(RegistryKeys.ENCHANTMENT);
@@ -59,7 +61,17 @@ public class efficient_handle_item extends Item {
             return TypedActionResult.pass(itemStack);
         }
 
-        if(itemStackOff.isOf(ModItems.EFFICIENT_HANDLE) && !itemStackMain.isEmpty()) {
+        if (itemStackOff.isOf(ModItems.EFFICIENT_HANDLE) && !itemStackMain.isEmpty()) {
+
+            if (itemStackMain.isOf(Items.BLAZE_ROD)) {
+                itemStackOff.decrement(1);
+                itemStackMain.decrement(1);
+                ignatius.setPos(user.getX(), user.getY(), user.getZ());
+                world.spawnEntity(ignatius);
+                world.createExplosion(ignatius, ignatius.getX(), ignatius.getY(), ignatius.getZ(), 0.1F, false, World.ExplosionSourceType.MOB);
+                ignatius.playSound(SoundEvents.BLOCK_END_PORTAL_SPAWN);
+            }
+
             if (itemStackMain.isOf(ModItems.ANCIENT_HANDLE)) {
                 itemStackOff.decrement(1);
                 itemStackMain.decrement(1);
